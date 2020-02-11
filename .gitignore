@@ -1,0 +1,9 @@
+checkpoints/
+results/
+*/*.pyc
+*.DS_Store
+*~
+*.pth
+logs
+*__pycache__*
+*.png

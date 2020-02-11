@@ -1,0 +1,6 @@
+FROM nvcr.io/nvidia/pytorch:19.05-py3
+RUN apt-get update --fix-missing
+RUN apt-get install -y software-properties-common libgl1-mesa-glx ffmpeg
+RUN conda install -c conda-forge scikit-image matplotlib scipy pillow jupyter visdom scikit-learn tqdm gensim h5py pip
+RUN pip install --upgrade pip
+RUN pip install tensorboardX opencv_contrib_python_headless

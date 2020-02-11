@@ -1,0 +1,44 @@
+epochs: 2000
+batch_size: 16
+n_landmarks: 30
+color_jitter: True
+dataset: bbc_pose
+dataset_path: '' # specify this one
+epochs: 2000
+fixed_covar: 0.008
+flip_probability: 0.0
+img_size: 128
+learning_rate: 0.0001
+model: PartFactorizedModel
+n_filters: 32
+n_layers_D: 3
+naf: 0
+ndf: 64
+ngc: 64
+nsf: 6
+no_grad_clip: True
+no_lsgan: False
+num_D: 2
+num_workers: 8
+reduced_w: True
+resume_ckpt:
+resume_ckpt_D:
+resume_ckpt_opt_G:  # optimizer checkpoint for main model
+resume_ckpt_opt_D:  # optimizer checkpoint for discriminator
+rot_lb: -0.39269908169872414
+rot_ub: 0.39269908169872414
+save_path: ''
+scale_lb: 1.05
+scale_ub: 1.15
+torch_home: '' # set this to where you want your vgg weights to be saved
+trans_lb: -10
+trans_ub: 10
+use_gan: False
+use_identity_covariance: False
+fixed_covar: 0.008
+use_vgg: True
+use_temporal: True
+val_frac: 0.01
+val_freq: 2
+vgg_lambda: 5.0
+use_DDP: False
