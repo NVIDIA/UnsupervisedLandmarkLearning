@@ -12,7 +12,7 @@ https://arxiv.org/abs/2001.09518
 ## Setup
 To download:
 ```
-git clone url --recursive
+git clone https://github.com/NVIDIA/UnsupervisedLandmarkLearning.git --recursive
 ```
 
 Tested with pytorch 1.1. May work with newer versions. The easiest way to get things running is to build the docker image located in: `docker/dockerfile`
