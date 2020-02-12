@@ -1,5 +1,5 @@
 # Unsupervised Disentanglement of Pose, Appearance and Background from Images and Videos
-Aysegul Dundar, Kevin J. Shih, Animesh Garg, Robert Pottorf, Andrew Tao, Bryan Catanzaro
+Aysegul Dundar*, Kevin J. Shih*, Animesh Garg, Robert Pottorf, Andrew Tao, Bryan Catanzaro
 
 This repository provides our implementation for learning unsupervised landmarks from video data, 
 using a foreground-background factorized image reconstruction. Details provided in the following tech report: 
@@ -88,6 +88,8 @@ python scripts/map_to_supervised_landmarks_bbc.py --gaussian_path $CKPT_DIR/gaus
 # load the test-set annotations and evaluate. This script should match the output provided by the matlab eval code in the BBC Pose code folder
 python scripts/eval_supervised_landmarks_bbc.py --results_path $CKPT_DIR/gauss_dumps --test_anno_path $TEST_ANNO_PATH --val_anno_path $VAL_ANNO_PATH
 ```
+## Pretrained Checkpoints
+Coming soon!
 
 ## Acknowledgements
 Our training pipeline closely follows the training pipeline as described in [Lorenz et al.](https://arxiv.org/pdf/1903.06946.pdf). Our generator code is heavily based off of [SPADE](https://github.com/NVlabs/SPADE) and [pix2pixHD](https://github.com/NVIDIA/pix2pixHD), which in turn borrow heavily from 
